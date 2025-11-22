@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+} 
+/*for each element margin and padding equals 0*/
+
+body{
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.wrapper{
+  background: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 1400px;
+  margin: auto;
+}
+
+header{
+  padding: 50px 60px;
+  background: #ffe2e9;
+
+}
+
+header .logo{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+header nav{
+  float: right;
+  width: 50%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #0e0205;
+}
+
+header nav ul li.active::after{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 5px;
+  background:  rgb(227, 119, 77);
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+  left: -15px;
+
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+  border-bottom: 5px solid rgb(227, 119, 77);
+}
+
+header nav ul li.btn a{
+  background:  rgb(227, 119, 77);
+  color: azure;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover{
+  background: #ff9ebb;
+}
+
+
+
+.hero-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-about .info {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.hero-about .info h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+
+
+.palka {
+  width: 1400px;
+  height: 2px;
+  background-color: #fcd8d8;
+  border: #fcd8d8 solid 1,5px;
+  border-radius: 20px;
+  margin: 55px 55px;
+}
+
+
+
+
+.wichtigeinfo {
+  padding: 80px 0;
+}
+
+.wichtigeinfo h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.wichtigeinfo .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wichtigeinfo .blocks .block {
+  width: 25%;
+  border-radius: 10px;
+  padding: 50px 30px;
+}
+
+
+.wichtigeinfo .blocks .block h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.wichtigeinfo .blocks .block .budge {
+  border-radius: 15px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+
+.wichtigeinfo .blocks .block .budge.rosa {
+  background: #FDD9D9;
+  color: #cb6363;
+}
+.pink {
+  background: #ffebeb;
+}
+
+.wichtigeinfo .blocks .block .budge.gelb {
+  background: #F9E3D1;
+  color: #cfa480;
+}
+.yellow {
+  background: #FFF5ED;
+}
+
+.wichtigeinfo .blocks .block .budge.rot {
+  background: #FFD4D4;
+  color: #c16971;
+}
+.hellrot {
+  background: #FFF0F0;
+}
+
+
+
+
+
+
+
+footer {
+  background: #ffe7ed;
+  padding: 50px 0;
+}
+
+footer .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .blocks p {
+  width: 300px;
+  margin: 15px 0;
+}
+
+footer .blocks h4 {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+footer .blocks ul {
+  list-style: none;
+}
+
+footer .blocks ul li { 
+  margin-top: 7px;
+  opacity: 0.8;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background: #f18eac;
+}
+
+
+footer > p { /*tolko k tomu abzazu kotorui prenadlejit footer*/
+  text-align: center;
+}
