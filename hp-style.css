@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body{
+  background-color: #dddddb;
+  font-family: "Prata", serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh; /* allow page to grow with content */
+  box-sizing: border-box;
+}
+
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* utility container to center and constrain wide content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #130303;
+}
+
+
+.header ul{
+    text-align: right;
+    padding-top: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+
+.header li::before{
+    content: "|";
+    color:#dddddb;
+    padding-right: 35px;
+}
+
+
+.header li:first-child::before{
+    content: "";
+    padding: 0;
+}
+
+
+.header li:last-child{
+    margin-right: 100px;
+}
+
+.header li{
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+
+
+.header a{
+    color: #dddddb;
+}
+
+
+.header li:hover{
+    
+    text-decoration: underline;
+    color: #dddddb;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+/* logo design */
+
+#logo{
+    color: #dddddb;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#logo img {
+   width: 200px;
+   height: auto;
+}
+
+
+.hero{
+    background-image: url(images/bckgr-homepage);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    align-items: center;
+
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: lighter;
+    font-family: "Prata", serif;
+    color: #dddddb; 
+}
+
+.hero .bttns{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+/*BUTTONS DESIGN */
+
+.bttns button{
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #951623;
+    border: solid 2px #951623;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 10px 20px;
+
+}
+
+.bttns button a{
+    color: #dddddb;
+}
+
+.bttns button:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    border-color: #c83131;
+    border: solid 1px #c83131
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.hp-uberuns{  
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    
+}
+
+
+.hp-uberuns div img{
+    width: 600px;
+    height: auto;
+    margin: 100px 0 100px 200px;
+    border: transparent 2px solid;
+    border-radius: 100px;
+}
+
+.teil2 {
+    margin-right: 300px;
+}
+
+.kicker{
+    color: #c83131;
+}
+
+.teil2 button {
+    background-color: #951623;
+    border: #951623 2px solid;
+    border-radius: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #dddddb;
+}
+
+.teil2 button:hover{
+     background-color: transparent;
+    border: #f18eac 2px solid;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    color: #951623;
+    
+}
+
+
+
+footer {
+  font-family: 'Outfit', sans-serif;
+  background: #ffe7ed;
+  padding: 50px 0;
+}
+
+footer .blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;    
+  flex-wrap: wrap; 
+}
+
+footer .blocks p {
+  width: 300px;
+  margin: 15px 0;
+}
+
+footer .blocks h4 {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+footer .blocks ul {
+  list-style: none;
+}
+
+footer .blocks ul li { 
+  margin-top: 7px;
+  opacity: 0.8;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background: #f18eac;
+}
+
+
+footer > p {
+  text-align: center;
+}
+
+
+
+
